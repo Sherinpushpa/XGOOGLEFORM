@@ -54,6 +54,7 @@ public class TestCases {
     @Test
     public void testCase01() throws InterruptedException {
         wrapper = new Wrappers(driver);
+        //Open the URL
         wrapper.openUrl("https://docs.google.com/forms/d/e/1FAIpQLSep9LTMntH5YqIXa5nkiPKSs283kdwitBBhXWyZdAS-e4CxBQ/viewform");
         Thread.sleep(2000);
         wrapper.enterText(By.xpath("//div[@class='AgroKb']//input[@type='text']"), "Crio Learner");
